@@ -1,0 +1,315 @@
+
+@CHARSET "UTF-8";
+
+
+/* -------------------- the font set - Sans Serif -------------------- */
+/*@import url(http://fonts.googleapis.com/css?family=Varela+Round);*/
+/*@import url(http://fonts.googleapis.com/css?family=Andika);*/
+
+@font-face {
+  font-family: 'Andika';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Andika'), url(../font/Andika.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Varela Round'), local('VarelaRound-Regular'), url(../font/Varela+Round.woff) format('woff');
+}
+
+
+/* -------------------- the font set - Serif -------------------- */
+/*@import url(http://fonts.googleapis.com/css?family=Bitter:400,700,400italic);*/
+/*@import url(http://fonts.googleapis.com/css?family=Donegal+One);*/
+/*@import url(http://fonts.googleapis.com/css?family=Amethysta);*/
+
+@font-face {
+  font-family: 'Amethysta';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Amethysta'), local('Amethysta-Regular'), url(../font/Amethysta.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bitter-Regular'), url(../font/Bitter-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Bitter-Bold'), url(../font/Bitter-Bold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Bitter';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Bitter-Italic'), url(../font/Bitter-Italic.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Donegal One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Donegal One'), local('DonegalOne-Regular'), url(../font/Donegal+One.woff) format('woff');
+}
+
+
+/* -------------------- global -------------------- */
+/* http://colorschemedesigner.com/#3-41TldfBw0w0
+   http://colorschemedesigner.com/#3o61TtDVGw0w0 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* -------------------- element settings -------------------- */
+body {
+  background-color: #333333;
+  color: #333333;
+  font-family: 'Bitter', 'Amethysta', 'Donegal One', serif;
+}
+
+h1, h2, h3, h4, h5, h6, th {
+  font-family: 'Varela Round', 'Andika', sans-serif;
+  font-weight: bold;
+  padding-bottom: 0.25em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.75em;
+  color: #19C0EF;
+}
+
+h4 {
+  font-size: 1.5em;
+  color: #FF8A13;
+}
+
+h5 {
+  font-size: 1.25em;
+  color: #38B75E;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+a,  a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #333333;
+}
+
+header, footer {
+  display: block;
+}
+
+header {
+  height: 4em;
+  border-bottom: 3px;
+  border-bottom-color: #19C0EF;
+  border-bottom-style: solid;
+}
+
+header h1, header p, header nav {
+  display: inline;
+  padding: 0 0.5em;
+}
+
+header h1 {
+  color: #19C0EF;
+  float: left;
+  padding-top: 0.5em;
+}
+
+header p {
+  float: left;
+  color: #3B99B3;
+  padding-top: 2em;
+}
+
+header nav {
+  color: #3B99B3;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: inline;
+  float: right;
+  list-style: none;
+  margin: 0 2em 0 0;
+  padding: 0;
+}
+
+header nav ul li {
+  float: left;
+  line-height: 4em;
+  padding: 0 1em;
+}
+
+header nav ul li a {
+  color: #3B99B3!important;
+}
+
+header nav ul li a:HOVER {
+  color: #FF8A13!important;
+}
+
+footer {
+  border-top: 3px;
+  border-top-color: #12F456;
+  border-top-style: solid;
+}
+
+footer small {
+  color: #12F456;
+  padding: 0.5em;
+  float: left;
+}
+
+footer a {
+  color: #38B75E!important;
+  text-decoration: none;
+}
+
+footer a:HOVER {
+  color: #069F34!important;
+}
+
+section {
+  margin: 0 0 0 0;
+  padding: 1em 2em;
+  background-color: #F0F0F0;
+}
+
+
+article {
+}
+
+/*** Table Styles **/
+
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  /*height: 320px;
+  margin: auto;
+  max-width: 600px;
+  width: 100%;*/
+  padding:5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+ 
+th {
+  color:#19C0EF;;
+  background:#333333;
+  border-bottom:3px solid #19C0EF;
+  border-right: 1px solid #BDBDBD;
+  font-weight: 150;
+  padding:8px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+  
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom-: 1px solid #C1C3D1;
+  color:#666B85;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+tr:hover td {
+  background:#BDBDBD;
+  color:#FFFFFF;
+  /*border-top: 1px solid #22262e;
+  border-bottom: 1px solid #22262e;*/
+}
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+ 
+tr:nth-child(odd):hover td {
+  background:#BDBDBD;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+td {
+  background:#FFFFFF;
+  padding:5px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size: 0.8em;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
